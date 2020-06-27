@@ -10,7 +10,9 @@ app.use(bodyParser.json());
 
 mongoose.connect('mongodb+srv://m220user:m220password@cluster0-c5pdt.mongodb.net/docker?retryWrites=true&w=majority', { useNewUrlParser: true });
 
-
+app.get("/",(req,res)=>{
+    res.send("Welcome to Node Api's")
+})
 app.use("/movies",movieService)
 app.use("/genre",genreService)
 

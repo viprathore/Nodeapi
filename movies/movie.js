@@ -49,11 +49,20 @@ router.get("/deletemovie/:id",(req,res)=>{
 		if(err){
 			console.log(err)
 		}else{
-			res.status(200).json({
-				Apiname:"Delete movie",
-				status:200,
-				data:"Deleted"
-			})
+			if(data){
+				res.status(200).json({
+					Apiname:"Delete movie",
+					status:200,
+					message:"Deleted"
+				})
+			}else{
+				res.status(200).json({
+					Apiname:"Delete movie",
+					status:200,
+					message:"Please check the Id"
+				})
+			}
+			
 		}
 	})
 })

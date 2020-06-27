@@ -9,4 +9,7 @@ as mongodb already get unique id always ,so we can use that also, if needed plea
 
 There are toltal six API's are made. for every operation in two services.
 
-Thankyou.
+Postman collection link :- https://enigmatic-hollows-31747.herokuapp.com
+please import the collection and test it.
+
+Thankyou
