@@ -12,4 +12,4 @@ RUN npm install
 COPY . ./
 
 # Launch application
-CMD ["npm","server.js"]
+CMD ["node","server.js"]
